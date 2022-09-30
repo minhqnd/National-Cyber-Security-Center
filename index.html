@@ -283,7 +283,7 @@
             getIp(function (value) {
                 $('#ip').html(`<b>IP:</b> ${value.ip} (${value.org})`)
             });
-            $('#time').html(`<b>Thời gian truy cập:</b> ${new Date().toUTCString()}`)
+            $('#time').html(`<b>Thời gian truy cập:</b> ${new Date().toString()}`)
             $('#userAgent').html(navigator.userAgent)
         });
 
