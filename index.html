@@ -230,10 +230,9 @@
                 <!-- <p>Trang web <b>qminh.xyz</b> đã bị chặn Unknown </p> -->
                 <p id="warning-noti">Thông tin kết nối tới trang vi phạm đã được lưu lại cho công tác nghiệp vụ an toàn,
                     an ninh mạng.</p>
-                <p id="ip" class="small-text"><b>IP:</b> 116.101.110.146 (Viettel Group)</p>
-                <p id="time" class="small-text"></p>
-                <p id="userAgent" class="small-text"><b>User-Agent:</b> Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)
-                    AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.5 Safari/605.1.15</p>
+                <p id="ip" class="small-text"><b>IP:</b> null</p>
+                <p id="time" class="small-text"><b>Thời gian truy cập:</b> null</p>
+                <p id="userAgent" class="small-text"><b>User-Agent:</b> null</p>
             </div>
         </div>
 
@@ -284,7 +283,7 @@
                 $('#ip').html(`<b>IP:</b> ${value.ip} (${value.org})`)
             });
             $('#time').html(`<b>Thời gian truy cập:</b> ${new Date().toString()}`)
-            $('#userAgent').html(navigator.userAgent)
+            $('#userAgent').html(`<b>User-Agent:</b> ${navigator.userAgent}`)
         });
 
     });
